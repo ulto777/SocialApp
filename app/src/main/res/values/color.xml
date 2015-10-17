@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="white">#ffffff</color>
-    <color name="white1">#cefcf5</color>
     <color name="black">#000000</color>
     <color name="gray">#f0f0f0</color>
-    <color name="TextColor1">#4d4d4d</color>
-    <color name="TextColor2">#3D3D3D</color>
-    <color name="TextColor3">#bfbfbf</color>
+    <color name="TextColorDark">#b3b3b3</color>
     <color name="TextColor_hint">#A3B1CA</color>
-    <color name="ButtonColor">#049ff1</color>
-    <color name="LightBlue">#66CCCC</color>
-    <color name="actionbar_background">#03a9f4</color>
-    <color name="actionbar_text">#5500ff</color>
-    <color name="test">#fafafa</color>
+
+
+
     <color name="borderColor">#747474</color>
 
     <color name="window_background">#CC000000</color>

@@ -1,10 +1,15 @@
-package com.fdu.socialapp;
+package com.fdu.socialapp.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toolbar;
+
+import com.fdu.socialapp.R;
+import com.fdu.socialapp.custom.MyPagerAdapter;
+import com.fdu.socialapp.custom.PagerSlidingTabStrip;
 
 public class Main extends Activity {
 
@@ -16,6 +21,17 @@ public class Main extends Activity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.id_toolbar);
         setActionBar(toolbar);
+
+        //Set the sliding pages
+        PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
+        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        MyPagerAdapter adapter = new MyPagerAdapter(getFragmentManager());
+        pager.setAdapter(adapter);
+        pager.addOnPageChangeListener(adapter);
+        tabs.setViewPager(pager);
+        tabs.setSelectedTextColor(getResources().getColor(R.color.myPrimaryDark));
+        tabs.setTextColor(getResources().getColor(R.color.TextColorDark));
+        tabs.setBackgroundColor(getResources().getColor(R.color.white));
 
     }
 

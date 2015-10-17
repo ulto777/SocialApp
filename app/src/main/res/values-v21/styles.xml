@@ -28,10 +28,22 @@
         <item name="android:paddingRight">6dp</item>
         <item name="android:paddingLeft">6dp</item>
         <item name="android:drawablePadding">6dp</item>
-        <item name="android:textColor">@color/TextColor2</item>
+        <item name="android:textColor">@color/TextColorDark</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:singleLine">true</item>
         <item name="android:background">@drawable/border</item>
+    </style>
+
+    <!-- PagerSlidingTabStrip的自定义样式 -->
+    <style name="pagerTabStype">
+        <item name="pstsShouldExpand">true</item>
+        <item name="pstsDividerColor">@color/myDivider</item>
+        <item name="pstsDividerPadding">0dp</item>
+        <item name="pstsUnderlineHeight">0dp</item>
+        <item name="pstsUnderlineColor">@color/myPrimary</item>
+        <item name="pstsIndicatorHeight">2dp</item>
+        <item name="pstsIndicatorColor">@color/myPrimaryLight</item>
+
     </style>
 </resources>

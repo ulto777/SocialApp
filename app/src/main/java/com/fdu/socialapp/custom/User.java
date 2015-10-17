@@ -1,4 +1,4 @@
-package com.fdu.socialapp;
+package com.fdu.socialapp.custom;
 
 import android.app.Application;
 

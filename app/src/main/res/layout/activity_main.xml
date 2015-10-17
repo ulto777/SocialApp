@@ -1,12 +1,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.fdu.socialapp.Main">
+    tools:context="com.fdu.socialapp.activities.Main">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
         <Toolbar
             android:id="@+id/id_toolbar"
             android:layout_width="match_parent"
@@ -18,8 +18,28 @@
             android:background="?android:attr/colorPrimary"
             android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
             android:popupTheme="@android:style/ThemeOverlay.Material.Light">
-
         </Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <com.fdu.socialapp.custom.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                style="@style/pagerTabStype"
+                android:layout_gravity="bottom"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/background_tabs" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>

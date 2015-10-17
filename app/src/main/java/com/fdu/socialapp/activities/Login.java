@@ -1,4 +1,4 @@
-package com.fdu.socialapp;
+package com.fdu.socialapp.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import com.fdu.socialapp.R;
+import com.fdu.socialapp.custom.User;
 
 public class Login extends Activity {
     @Override
@@ -48,5 +51,9 @@ public class Login extends Activity {
         Intent intent = new Intent(this, Main.class);
         startActivity(intent);
         finish();
+    }
+
+    public void register(){
+
     }
 }

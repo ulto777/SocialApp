@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:text="@string/Register"
-                    android:textColor="@color/actionbar_background"
+                    android:textColor="@color/myPrimaryDark"
                     android:textSize="25sp"
                     android:textStyle="bold"
                     android:onClick="register">
