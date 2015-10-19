@@ -13,9 +13,8 @@ import com.fdu.socialapp.custom.User;
 public class Login extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        final User user = (User) getApplication();
         super.onCreate(savedInstanceState);
-        if (user.isLogin()){
+        if (User.getMyUser().isLogin()){
             Intent intent = new Intent(this, Main.class);
             startActivity(intent);
             finish();
@@ -46,14 +45,14 @@ public class Login extends Activity {
     }
 
     public void login(View view){
-        final User user = (User) getApplication();
-        user.login();
+        User.getMyUser().login();
         Intent intent = new Intent(this, Main.class);
         startActivity(intent);
         finish();
     }
 
-    public void register(){
-
+    public void toSignUp(View view){
+        Intent intent = new Intent(this, SignUp.class);
+        startActivity(intent);
     }
 }

@@ -3,8 +3,6 @@ package com.fdu.socialapp.model;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.fdu.socialapp.User;
-
 /**
  * Created by mh on 2015/10/14.
  */

@@ -21,4 +21,9 @@
     <string name="InputMail">请输入您的邮箱</string>
     <string name="RegCommit">提   交</string>
     <string name="title_activity_main">Main</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="startSessions">发起会话</string>
+    <string name="addFriends">添加好友</string>
+    <string name="scanQRcode">扫一扫</string>
+    <string name="feedback">反馈</string>
 </resources>

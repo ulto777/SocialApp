@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toolbar;
 
 import com.fdu.socialapp.R;
@@ -39,6 +40,7 @@ public class Main extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
         return true;
     }
 
@@ -55,5 +57,12 @@ public class Main extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void userInfo(View view){
+
+    }
+
+    public void setting(View view){
+
     }
 }

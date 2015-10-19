@@ -1,8 +1,30 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.fdu.socialapp.activities.Main">
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never" />
+    <item android:id="@+id/add"
+        android:icon="@drawable/ic_add_white_24dp"
+        android:showAsAction="always"
+        android:title="add">
+        <menu>
+            <item android:id="@+id/startSessions"
+                android:title="@string/startSessions"
+                android:orderInCategory="80"
+                android:showAsAction="never"
+                android:icon="@drawable/ic_chat_white_24dp">
+            </item>
+            <item android:id="@+id/addFriends"
+                android:title="@string/addFriends"
+                android:orderInCategory="90"
+                android:icon="@drawable/ic_person_add_white_24dp"
+                android:showAsAction="never" />
+            <item android:id="@+id/scanQRcode"
+                android:title="@string/scanQRcode"
+                android:orderInCategory="100"
+                android:showAsAction="never"
+                android:icon="@drawable/ic_crop_free_white_24dp"/>
+        </menu>
+
+    </item>
+
 </menu>

@@ -3,18 +3,56 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroud"
     android:orientation="vertical">
     <LinearLayout
+        android:id="@+id/userInfo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:background="@color/myAccent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/titlebar"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:onClick="userInfo">
+        <ImageView
+            android:id="@+id/userIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:text="游客"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/titlebar"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:onClick="setting">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="22dp"
+            android:layout_gravity="center"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="我"
-            android:textSize="30sp"/>
 
+            android:textSize="22sp"
+            android:text="设置"
+            android:layout_gravity="center"/>
     </LinearLayout>
 
 </LinearLayout>

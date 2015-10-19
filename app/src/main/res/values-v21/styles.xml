@@ -10,13 +10,25 @@
         <item name="android:colorPrimaryDark">@color/myPrimaryDark</item>
         <item name="android:colorAccent">@color/myAccent</item>
 
+        <item name="android:actionOverflowMenuStyle">@style/myMunuStyle</item>
         <item name="android:actionOverflowButtonStyle">@style/myOverflowButton</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
 
+
+    </style>
+    <style name="myMunuStyle" parent="@android:style/Widget.Holo.PopupMenu">
+        <item name="android:popupBackground">@color/myPrimary</item>
+        <item name="android:paddingRight">10dp</item>
     </style>
 
     <style name="myOverflowButton" parent="@android:style/Widget.Holo.ActionButton.Overflow">
-
+        <item name="android:src">@drawable/ic_add_white_24dp</item>
     </style>
+
+    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+    </style>
+
+
 
 
     <style name="NoActionBar" parent="android:Theme.Holo.Light.NoActionBar"/>
@@ -33,6 +45,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:singleLine">true</item>
         <item name="android:background">@drawable/border</item>
+        <item name="android:elevation">2dp</item>
     </style>
 
     <!-- PagerSlidingTabStrip的自定义样式 -->

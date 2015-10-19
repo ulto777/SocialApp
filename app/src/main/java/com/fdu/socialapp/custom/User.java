@@ -9,6 +9,12 @@ import android.app.Application;
 public class User extends Application{
     private boolean isLogin;
     private String userName;
+
+    private static User myUser;
+
+    public static User getMyUser(){
+        return myUser;
+    }
     public boolean isLogin() {
         return isLogin;
     }
@@ -33,5 +39,6 @@ public class User extends Application{
         super.onCreate();
         isLogin = false;
         userName = null;
+        myUser = this;
     }
 }
