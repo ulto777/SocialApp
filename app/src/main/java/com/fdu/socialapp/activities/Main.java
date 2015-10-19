@@ -74,7 +74,7 @@ public class Main extends Activity {
         // wipe data
         CognitoSyncClientManager.getInstance()
                 .wipeData();
-        CognitoSyncClientManager.credentialsProvider = null;
+
         // Wipe shared preferences
         AmazonSharedPreferencesWrapper.wipe(PreferenceManager
                 .getDefaultSharedPreferences(Main.this));

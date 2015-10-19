@@ -106,15 +106,4 @@ public class Login extends Activity {
         startActivity(intent);
     }
 
-    public void logOut(View view){
-        // wipe data
-        CognitoSyncClientManager.getInstance()
-                .wipeData();
-
-        // Wipe shared preferences
-        AmazonSharedPreferencesWrapper.wipe(PreferenceManager
-                .getDefaultSharedPreferences(Login.this));
-        Log.i("shit", "退出1");
-        finish();
-    }
 }
