@@ -23,7 +23,7 @@ public class SignUp extends Activity {
         setContentView(R.layout.activity_sign_up);
         signUpView = (WebView) findViewById(R.id.signUpWebView);
         signUpView.getSettings().setJavaScriptEnabled(true);
-        signUpView.loadUrl("http://www.baidu.com");
+        signUpView.loadUrl("http://54.199.161.136/jsp/register.jsp");
         signUpView.setWebViewClient(new HelloWebViewClient());
         ImageView closeSinUP = (ImageView) findViewById(R.id.closeSignUp);
         closeSinUP.setOnClickListener(new View.OnClickListener() {

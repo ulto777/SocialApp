@@ -23,6 +23,9 @@
                 android:orderInCategory="100"
                 android:showAsAction="never"
                 android:icon="@drawable/ic_crop_free_white_24dp"/>
+            <item android:id="@+id/logOut"
+                android:title="退出"
+                android:showAsAction="never"/>
         </menu>
 
     </item>

@@ -2,15 +2,19 @@ package com.fdu.socialapp.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toolbar;
 
 import com.fdu.socialapp.R;
+import com.fdu.socialapp.custom.CognitoSyncClientManager;
 import com.fdu.socialapp.custom.MyPagerAdapter;
 import com.fdu.socialapp.custom.PagerSlidingTabStrip;
+import com.fdu.socialapp.devauth.client.AmazonSharedPreferencesWrapper;
 
 public class Main extends Activity {
 
@@ -64,5 +68,17 @@ public class Main extends Activity {
 
     public void setting(View view){
 
+    }
+
+    public void logOut(View view){
+        // wipe data
+        CognitoSyncClientManager.getInstance()
+                .wipeData();
+        CognitoSyncClientManager.credentialsProvider = null;
+        // Wipe shared preferences
+        AmazonSharedPreferencesWrapper.wipe(PreferenceManager
+                .getDefaultSharedPreferences(Main.this));
+        Log.i("shit", "退出1");
+        finish();
     }
 }

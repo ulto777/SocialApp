@@ -28,7 +28,7 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <EditText
-                    android:id="@+id/username"
+                    android:id="@+id/userName"
                     style="@style/TextStyle"
                     android:hint="@string/HintInput"
                     android:textColorHint="@color/TextColor_hint" >

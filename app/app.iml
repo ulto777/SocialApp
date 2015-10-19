@@ -73,6 +73,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/dex-cache" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v13/22.2.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.20.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jacoco" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javaResources" />
@@ -90,10 +91,18 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 22 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="ormlite-android-4.48" level="project" />
-    <orderEntry type="library" exported="" name="ormlite-core-4.48" level="project" />
+    <orderEntry type="library" exported="" name="gson-2.2.4" level="project" />
+    <orderEntry type="library" exported="" name="aws-android-sdk-cognito-2.2.7" level="project" />
     <orderEntry type="library" exported="" name="support-v4-22.2.1" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-22.2.1" level="project" />
+    <orderEntry type="library" exported="" name="aws-android-sdk-core-2.2.7" level="project" />
+    <orderEntry type="library" exported="" name="facebook-android-sdk-3.20.0" level="project" />
+    <orderEntry type="library" exported="" name="login-with-amazon-sdk" level="project" />
+    <orderEntry type="library" exported="" name="ormlite-android-4.48" level="project" />
+    <orderEntry type="library" exported="" name="ormlite-core-4.48" level="project" />
+    <orderEntry type="library" exported="" name="signpost-core-1.2.1.1" level="project" />
+    <orderEntry type="library" exported="" name="commons-codec-1.10" level="project" />
     <orderEntry type="library" exported="" name="support-v13-22.2.1" level="project" />
+    <orderEntry type="library" exported="" name="bolts-android-1.1.2" level="project" />
   </component>
 </module>
