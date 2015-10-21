@@ -27,5 +27,6 @@
     <string name="addFriends">添加好友</string>
     <string name="scanQRcode">扫一扫</string>
     <string name="feedback">反馈</string>
+    <string name="logOut">注销</string>
 
 </resources>

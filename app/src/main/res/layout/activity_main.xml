@@ -35,7 +35,7 @@
                 android:layout_gravity="bottom"
                 android:textSize="14sp"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="50dp"
                 android:background="@drawable/background_tabs" />
 
         </LinearLayout>

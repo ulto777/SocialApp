@@ -2,6 +2,9 @@ package com.fdu.socialapp.custom;
 
 import android.app.Application;
 
+import com.avos.avoscloud.AVOSCloud;
+
+
 /**
  * Created by mao on 2015/10/12 0012.
  * A class for users
@@ -37,6 +40,7 @@ public class User extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
+        AVOSCloud.initialize(this, "zFeMVYB4tMuBVvjcAWt8uBOh", "IInViyO81sNlBNj4TUSoXyQH");
         isLogin = false;
         userName = null;
         myUser = this;

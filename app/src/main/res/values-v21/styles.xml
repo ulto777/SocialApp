@@ -51,7 +51,7 @@
     <!-- PagerSlidingTabStrip的自定义样式 -->
     <style name="pagerTabStype">
         <item name="pstsShouldExpand">true</item>
-        <item name="pstsDividerColor">@color/myDivider</item>
+        <item name="pstsDividerColor">@color/white</item>
         <item name="pstsDividerPadding">0dp</item>
         <item name="pstsUnderlineHeight">0dp</item>
         <item name="pstsUnderlineColor">@color/myPrimary</item>

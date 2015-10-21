@@ -17,19 +17,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:support-v4:22.2.1'
-    compile 'com.android.support:support-v13:22.2.1'
+    compile 'com.android.support:support-v4:23.1.0'
+    compile 'com.android.support:support-v13:23.1.0'
     compile 'com.j256.ormlite:ormlite-android:4.48'
     compile 'com.j256.ormlite:ormlite-core:4.48'
-    compile 'com.amazonaws:aws-android-sdk-core:2.2.+'
-    compile 'com.amazonaws:aws-android-sdk-cognito:2.2.+'
-    compile 'com.facebook.android:facebook-android-sdk:3.20.+'
 
-    compile files('C:/Users/mao/AndroidStudioProjects/SocialApp/libs/commons-codec-1.10.jar')
-    compile files('C:/Users/mao/AndroidStudioProjects/SocialApp/libs/signpost-core-1.2.1.1.jar')
-    compile files('C:/Users/mao/AndroidStudioProjects/SocialApp/libs/login-with-amazon-sdk.jar')
+
 }

@@ -8,11 +8,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.fdu.socialapp.R;
-import com.fdu.socialapp.custom.User;
 
 public class SignUp extends Activity {
     private WebView signUpView;
@@ -23,7 +21,7 @@ public class SignUp extends Activity {
         setContentView(R.layout.activity_sign_up);
         signUpView = (WebView) findViewById(R.id.signUpWebView);
         signUpView.getSettings().setJavaScriptEnabled(true);
-        signUpView.loadUrl("http://54.199.161.136/jsp/register.jsp");
+        signUpView.loadUrl("http://www.baidu.com");
         signUpView.setWebViewClient(new HelloWebViewClient());
         ImageView closeSinUP = (ImageView) findViewById(R.id.closeSignUp);
         closeSinUP.setOnClickListener(new View.OnClickListener() {

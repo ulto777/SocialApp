@@ -2,19 +2,17 @@ package com.fdu.socialapp.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toolbar;
 
+import com.avos.avoscloud.AVObject;
 import com.fdu.socialapp.R;
-import com.fdu.socialapp.custom.CognitoSyncClientManager;
 import com.fdu.socialapp.custom.MyPagerAdapter;
 import com.fdu.socialapp.custom.PagerSlidingTabStrip;
-import com.fdu.socialapp.devauth.client.AmazonSharedPreferencesWrapper;
+import com.fdu.socialapp.custom.User;
 
 public class Main extends Activity {
 
@@ -56,7 +54,9 @@ public class Main extends Activity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.logOut) {
+            User.getMyUser().logout();
+            finish();
             return true;
         }
 
@@ -70,15 +70,11 @@ public class Main extends Activity {
 
     }
 
-    public void logOut(View view){
-        // wipe data
-        CognitoSyncClientManager.getInstance()
-                .wipeData();
-        CognitoSyncClientManager.credentialsProvider = null;
-        // Wipe shared preferences
-        AmazonSharedPreferencesWrapper.wipe(PreferenceManager
-                .getDefaultSharedPreferences(Main.this));
-        Log.i("shit", "退出1");
-        finish();
+    public void test(View view){
+        AVObject testObject = new AVObject("TestObject");
+        testObject.put("foo", "bar");
+        testObject.saveInBackground();
     }
+
+
 }
